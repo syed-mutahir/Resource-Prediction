@@ -24,7 +24,6 @@
              color: white;
              border-color: #31b0d5;
              width: 150px;
-             margin-top: 20px;
          }
          .my-btn:hover{
             background-color: #31b0d5;
@@ -106,13 +105,13 @@
                             <p>Regions</p>
                         </a>
                     </li>
-                    <li class="nav-item active">
+                    <li>
                         <a class="nav-link" href="./Projects.html">
                             <i class="nc-icon nc-explore-2"></i>
                             <p>Projects</p>
                         </a>
                     </li>
-                    <li>
+                    <li class="nav-item active">
                         <a class="nav-link" href="./SubModules.html">
                             <i class="nc-icon nc-chart-pie-36"></i>
                             <p>Sub Modules</p>
@@ -131,7 +130,7 @@
              <!-- Navbar -->
              <nav class="navbar navbar-expand-lg " color-on-scroll="500">
                  <div class="container-fluid">
-                     <a class="navbar-brand"> Projects </a>
+                     <a class="navbar-brand"> Sub Modules </a>
                      <button href="" class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
                          <span class="navbar-toggler-bar burger-lines"></span>
                          <span class="navbar-toggler-bar burger-lines"></span>
@@ -155,29 +154,26 @@
                     <div class="row">
                         <div class="col-md-12">
                             <div class="card py-4 px-4">
-                                <h3 style="color: gray;text-align: center;margin-bottom: 30px;">Add New Project</h3>
-                                <label>Name</label>
-                                <input type="text" class="form-control mb-3" placeholder="Enter prject name here...." />
+                                <h3 style="color: gray;text-align: center;margin-bottom: 30px;">Create Sub Module</h3>
+                                <label>Sub Module</label>
+                                <input type="text" class="form-control mb-3" placeholder="Enter Sub module...." />
                                 
-                                <label>Cost</label>
-                                <input type="number" class="form-control mb-3" placeholder="Enter Cost here...." />
-                                
-                                <label>Date</label>
-                                <input type="date" class="form-control mb-3" placeholder="Select Date here...." />
-
-                                <label>Template</label>
-                                <select class="form-control" placholder="Select Template">
-                                    <option>Food App</option>
-                                    <option>Custom</option>
+                                <label>Module</label>
+                                <select class="form-control" placholder="Select Module">
+                                    <option>Search Bar</option>
+                                    <option>Shoping Cart</option>
+                                    <option>Whish List</option>
                                 </select>
+                               
+                                <label style="margin-top: 20px;">Image</label>
+                                <input type="file" class="form-control"/>
 
-                                <label style="margin-top: 20px;">Region</label>
-                                <select class="form-control" placholder="Select Region">
-                                    <option>New York</option>
-                                </select>
+                                <label style="margin-top: 20px;">Description</label>
+                                <textarea class="form-control mb-3" placeholder="Enter description here...." rows="5" style="resize: none;height: auto;">
 
+                                </textarea>
                                 <button type="button" class="btn my-btn" value="Create">
-                                    Add Now
+                                    Create Now
                                 </button>
                             </div>
                         </div>

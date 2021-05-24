@@ -19,12 +19,14 @@
      <link href="./assets/css/demo.css" rel="stylesheet" />
 
      <style>
+         #box-shadow{
+            box-shadow: 0px 4px 5px 0px rgb(214, 214, 214);
+         }
          .my-btn{
              background-color: #31b0d5;
              color: white;
              border-color: #31b0d5;
-             width: 150px;
-             margin-top: 20px;
+             margin-left: 15px;
          }
          .my-btn:hover{
             background-color: #31b0d5;
@@ -52,7 +54,7 @@
                      </a>
                  </div>
                  <ul class="nav">
-                     <li>
+                     <li >
                          <a class="nav-link" href="Designation.html">
                              <i class="nc-icon nc-chart-pie-35"></i>
                              <p>Designations</p>
@@ -82,7 +84,7 @@
                             <p>Platform Modules</p>
                         </a>
                     </li>
-                    <li>
+                    <li class="nav-item active">
                         <a class="nav-link" href="./PlatformTypes.html">
                             <i class="nc-icon nc-chart"></i>
                             <p>Platform Types</p>
@@ -95,9 +97,9 @@
                         </a>
                     </li>
                     <li>
-                        <a class="nav-link" href="./ProjectTemplates.html">
-                            <i class="nc-icon nc-badge"></i>
-                            <p>Project Templates</p>
+                        <a class="nav-link" href="./TemplateModules.html">
+                            <i class="nc-icon nc-chart"></i>
+                            <p>Template Modules</p>
                         </a>
                     </li>
                     <li>
@@ -106,7 +108,7 @@
                             <p>Regions</p>
                         </a>
                     </li>
-                    <li class="nav-item active">
+                    <li>
                         <a class="nav-link" href="./Projects.html">
                             <i class="nc-icon nc-explore-2"></i>
                             <p>Projects</p>
@@ -131,7 +133,7 @@
              <!-- Navbar -->
              <nav class="navbar navbar-expand-lg " color-on-scroll="500">
                  <div class="container-fluid">
-                     <a class="navbar-brand"> Projects </a>
+                     <a class="navbar-brand"> Platform Types </a>
                      <button href="" class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
                          <span class="navbar-toggler-bar burger-lines"></span>
                          <span class="navbar-toggler-bar burger-lines"></span>
@@ -152,37 +154,52 @@
              <div class="content">
                  <div class="container-fluid">
 
-                    <div class="row">
+                    <div class="row mb-4">
                         <div class="col-md-12">
-                            <div class="card py-4 px-4">
-                                <h3 style="color: gray;text-align: center;margin-bottom: 30px;">Add New Project</h3>
-                                <label>Name</label>
-                                <input type="text" class="form-control mb-3" placeholder="Enter prject name here...." />
-                                
-                                <label>Cost</label>
-                                <input type="number" class="form-control mb-3" placeholder="Enter Cost here...." />
-                                
-                                <label>Date</label>
-                                <input type="date" class="form-control mb-3" placeholder="Select Date here...." />
-
-                                <label>Template</label>
-                                <select class="form-control" placholder="Select Template">
-                                    <option>Food App</option>
-                                    <option>Custom</option>
-                                </select>
-
-                                <label style="margin-top: 20px;">Region</label>
-                                <select class="form-control" placholder="Select Region">
-                                    <option>New York</option>
-                                </select>
-
-                                <button type="button" class="btn my-btn" value="Create">
-                                    Add Now
-                                </button>
+                            <div class="p-3 bg-white">
+                                <label style="color: gray;">Add New Platform Type</label>
+                                <div class="d-flex align-items-center">
+                                    <input type="text" class="form-control" placeholder="Enter type here...." />
+                                    <!-- <button type="button" class="btn btn-primary">Primary</button> -->
+                                    <button type="button" class="btn my-btn" value="Create">
+                                        <span><i class="nc-icon nc-simple-add m-0 mr-1"></i></span>
+                                        Add Now
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </div>
 
+                    <div class="row mt-0">
+                         <div class="col-md-3">
+                             <div class="card py-4 px-1" id="box-shadow">
+                                 <div class="card-header p-0 text-center">
+                                     <p class="card-category" style="color: black;">React Native</p>
+                                 </div>
+                             </div>
+                         </div>
+                         <div class="col-md-3">
+                             <div class="card py-4 px-1" id="box-shadow">
+                                 <div class="card-header p-0 text-center">
+                                     <p class="card-category" style="color: black;">Ionic</p>
+                                 </div>
+                             </div>
+                         </div>
+                         <div class="col-md-3">
+                             <div class="card py-4 px-1" id="box-shadow">
+                                 <div class="card-header p-0 text-center">
+                                     <p class="card-category" style="color: black;">Flutter</p>
+                                 </div>
+                             </div>
+                         </div>
+                         <div class="col-md-3">
+                             <div class="card py-4 px-1" id="box-shadow">
+                                 <div class="card-header p-0 text-center">
+                                     <p class="card-category" style="color: black;">IOS</p>
+                                 </div>
+                             </div>
+                         </div>
+                    </div>
                  </div>
              </div>
          </div>

@@ -19,15 +19,16 @@
      <link href="./assets/css/demo.css" rel="stylesheet" />
 
      <style>
+         #box-shadow{
+            box-shadow: 0px 4px 5px 0px rgb(214, 214, 214);
+         }
          .my-btn{
              background-color: #31b0d5;
              color: white;
              border-color: #31b0d5;
-             width: 150px;
-             margin-top: 20px;
          }
          .my-btn:hover{
-            background-color: #31b0d5;
+             background-color: #31b0d5;
              color: white;
              border-color: #31b0d5;
              cursor: pointer;
@@ -106,13 +107,13 @@
                             <p>Regions</p>
                         </a>
                     </li>
-                    <li class="nav-item active">
+                    <li>
                         <a class="nav-link" href="./Projects.html">
                             <i class="nc-icon nc-explore-2"></i>
                             <p>Projects</p>
                         </a>
                     </li>
-                    <li>
+                    <li class="nav-item active">
                         <a class="nav-link" href="./SubModules.html">
                             <i class="nc-icon nc-chart-pie-36"></i>
                             <p>Sub Modules</p>
@@ -131,7 +132,7 @@
              <!-- Navbar -->
              <nav class="navbar navbar-expand-lg " color-on-scroll="500">
                  <div class="container-fluid">
-                     <a class="navbar-brand"> Projects </a>
+                     <a class="navbar-brand"> Sub Modules </a>
                      <button href="" class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
                          <span class="navbar-toggler-bar burger-lines"></span>
                          <span class="navbar-toggler-bar burger-lines"></span>
@@ -152,37 +153,51 @@
              <div class="content">
                  <div class="container-fluid">
 
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="card py-4 px-4">
-                                <h3 style="color: gray;text-align: center;margin-bottom: 30px;">Add New Project</h3>
-                                <label>Name</label>
-                                <input type="text" class="form-control mb-3" placeholder="Enter prject name here...." />
-                                
-                                <label>Cost</label>
-                                <input type="number" class="form-control mb-3" placeholder="Enter Cost here...." />
-                                
-                                <label>Date</label>
-                                <input type="date" class="form-control mb-3" placeholder="Select Date here...." />
-
-                                <label>Template</label>
-                                <select class="form-control" placholder="Select Template">
-                                    <option>Food App</option>
-                                    <option>Custom</option>
-                                </select>
-
-                                <label style="margin-top: 20px;">Region</label>
-                                <select class="form-control" placholder="Select Region">
-                                    <option>New York</option>
-                                </select>
-
-                                <button type="button" class="btn my-btn" value="Create">
-                                    Add Now
-                                </button>
-                            </div>
+                    <div class="row mb-4">
+                        <div class="col-md-12 text-right">
+                            <a href="./CreateSubModules.html" type="button" class="btn my-btn" style="color: white;" value="Create">
+                                <span><i class="nc-icon nc-simple-add m-0 mr-1" style="color: white;"></i></span>
+                                Create New
+                            </a>
                         </div>
                     </div>
 
+                    <div class="row mt-0">
+                         <div class="col-md-6">
+                             <div class="card py-4 px-2" style="border-radius: 10px;min-height: 160px; max-height: auto;" id="box-shadow">
+                                <div class="row">
+                                    <div class="col-sm-4">
+                                        <img src="./assets/img/PayFort.png" class="img-fluid" />
+                                    </div>
+                                    <div class="col-sm-8">
+                                        <div class="card-header p-0">
+                                            <p class="card-category" style="color: gray;"><b>Sub Module: </b>Pay Fort</p>
+                                            <p class="card-category" style="color: gray;"><b>Module: </b>QA</p>
+                                            <p class="card-category" style="color: gray;"><b>Description: </b> It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                             </div>
+                         </div>
+                         <div class="col-md-6">
+                            <div class="card py-4 px-2" style="border-radius: 10px;min-height: 160px; max-height: auto;" id="box-shadow">
+                               <div class="row">
+                                   <div class="col-sm-4">
+                                       <img src="./assets/img/PayTabs.png" class="img-fluid" />
+                                   </div>
+                                   <div class="col-sm-8">
+                                       <div class="card-header p-0">
+                                           <p class="card-category" style="color: gray;"><b>Sub Module: </b>Pay Tabs</p>
+                                           <p class="card-category" style="color: gray;"><b>Module: </b>QA</p>
+                                           <p class="card-category" style="color: gray;"><b>Description: </b> It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. </p>
+                                       </div>
+                                   </div>
+                               </div>
+                               
+                            </div>
+                        </div>
+                    </div>
                  </div>
              </div>
          </div>

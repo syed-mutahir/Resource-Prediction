@@ -131,7 +131,7 @@
              <!-- Navbar -->
              <nav class="navbar navbar-expand-lg " color-on-scroll="500">
                  <div class="container-fluid">
-                     <a class="navbar-brand"> Projects </a>
+                     <a class="navbar-brand"> Predictions </a>
                      <button href="" class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
                          <span class="navbar-toggler-bar burger-lines"></span>
                          <span class="navbar-toggler-bar burger-lines"></span>
@@ -155,29 +155,54 @@
                     <div class="row">
                         <div class="col-md-12">
                             <div class="card py-4 px-4">
-                                <h3 style="color: gray;text-align: center;margin-bottom: 30px;">Add New Project</h3>
-                                <label>Name</label>
-                                <input type="text" class="form-control mb-3" placeholder="Enter prject name here...." />
-                                
-                                <label>Cost</label>
-                                <input type="number" class="form-control mb-3" placeholder="Enter Cost here...." />
-                                
-                                <label>Date</label>
-                                <input type="date" class="form-control mb-3" placeholder="Select Date here...." />
-
-                                <label>Template</label>
-                                <select class="form-control" placholder="Select Template">
-                                    <option>Food App</option>
+                                <h3 style="color: gray;text-align: center;margin-bottom: 30px;">Add New Prediction</h3>
+                                <label>Project</label>
+                                <select class="form-control" placholder="Select Designation">
+                                    <option>Go Cyber</option>
                                     <option>Custom</option>
                                 </select>
 
-                                <label style="margin-top: 20px;">Region</label>
-                                <select class="form-control" placholder="Select Region">
-                                    <option>New York</option>
+                                <label style="margin-top:20px;">Platform</label>
+                                <select class="form-control" placholder="Select Designation">
+                                    <option>WEB</option>
+                                    <option>Android</option>
+                                    <option>IOS</option>
+                                </select>
+                                
+                                <label style="margin-top:20px;">Designation</label>
+                                <select class="form-control" placholder="Select Designation">
+                                    <option>SEO Expert</option>
+                                    <option>SQA</option>
+                                    <option>Designer</option>
                                 </select>
 
+                                <label style="margin-top: 20px;">Modules</label>
+                                <select class="form-control" placholder="Select Designation" multiple size="5" style="height: auto;">
+                                    <option>Search Bar</option>
+                                    <option>Shoping Cart</option>
+                                    <option>Whish List</option>
+                                    <option>Login</option>
+                                    <option>Signup</option>
+                                    <option>notification</option>
+                                    <option>chat</option>
+                                </select>
+
+                                <label style="margin-top: 20px;" >Sub Modules</label>
+                                <select id="platform" class="form-control" placholder="Select Designation" multiple size="5" style="height: auto;">
+                                    <option>Search Bar</option>
+                                    <option>Shoping Cart</option>
+                                    <option>Whish List</option>
+                                    <option>Login</option>
+                                    <option>Signup</option>
+                                    <option>notification</option>
+                                    <option>chat</option>
+                                </select>
+
+                                <label style="margin-top:20px;">Cost</label>
+                                <input type="number" class="form-control mb-3" placeholder="Enter Cost here...." />
+
                                 <button type="button" class="btn my-btn" value="Create">
-                                    Add Now
+                                    Create Now
                                 </button>
                             </div>
                         </div>
@@ -204,15 +229,15 @@
  <script src="./assets/js/light-bootstrap-dashboard.js?v=2.0.0 " type="text/javascript"></script>
  <!-- Light Bootstrap Dashboard DEMO methods, don't include it in your project! -->
  <script src="./assets/js/demo.js"></script>
- <!-- <script type="text/javascript">
+ <script type="text/javascript">
      $(document).ready(function() {
-         // Javascript method's body can be found in assets/js/demos.js
-         demo.initDashboardPageCharts();
- 
-         demo.showNotification();
- 
+        $("#platform").change(function () {
+            if($("#platform option:selected").length === 3) {
+                // $(this).prop('disabled',true)
+            }
+        });
      });
- </script> -->
+ </script>
  
  </html>
  
